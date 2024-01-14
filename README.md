@@ -1,8 +1,17 @@
-Description: Hand-on AWS Lambda to understand Lambda and python.
+## Description: 
 
-Technologies Used: -AWS Lambda -python
+Hand-on AWS Lambda to understand Lambda and python.
 
-What I Learned: This Hand-on AWS Lambda allowed me to enhance my skills in AWS Lambda and programming.
+## Technologies Used: 
+
+  -  AWS Lambda 
+  -  python
+
+## What I Learned: 
+
+This Hand-on AWS Lambda allowed me to enhance my skills in AWS Lambda and programming.
+
+## 
 
 ![Lambda1](https://github.com/Rawipat40/aws_restart-Lambda/assets/141838218/c932fe66-2159-4ad5-9f52-2b49ed0edff6)
 
