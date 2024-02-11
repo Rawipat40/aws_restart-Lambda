@@ -1,34 +1,30 @@
-## Description: 
+# Lambda Hands-On with Python: Count Words in File and Trigger AWS Lambda to Send Email Notification
 
-Hand-on AWS Lambda to understand Lambda and python.
+This repository contains a simple example of using AWS Lambda to trigger a Python function that counts the occurrences of words in a file and sends a notification email with the results.
 
-## Technologies Used: 
+## Usage
 
-  -  AWS Lambda 
-  -  python
+1. **Upload Python Code to AWS Lambda:**
 
-## What I Learned: 
+    Upload the `lambda_function.py` file to AWS Lambda using the AWS Management Console or AWS CLI.
 
-This Hand-on AWS Lambda allowed me to enhance my skills in AWS Lambda and programming.
+2. **Set Up an S3 Bucket:**
 
-## 
+    Create an S3 bucket where you will upload the file for word count analysis.
 
-![Lambda1](https://github.com/Rawipat40/aws_restart-Lambda/assets/141838218/c932fe66-2159-4ad5-9f52-2b49ed0edff6)
+3. **Create an S3 Event Trigger for Lambda:**
 
-![Lambda2](https://github.com/Rawipat40/aws_restart-Lambda/assets/141838218/642c48cf-5f1b-43c9-9388-53242de0ae58)
+    Configure the S3 bucket to trigger the Lambda function whenever a file is uploaded.
 
-![Lambda3](https://github.com/Rawipat40/aws_restart-Lambda/assets/141838218/13515fc5-c596-4368-a8b7-36b17c606bc5)
+4. **Test the Setup:**
 
-![Lambda4](https://github.com/Rawipat40/aws_restart-Lambda/assets/141838218/24ae906e-c71a-4a13-8144-3ddea29ffc65)
+    Upload a text file containing words to the configured S3 bucket. Check your email for the word count notification.
 
-![Lambda5](https://github.com/Rawipat40/aws_restart-Lambda/assets/141838218/43dc2fc7-a099-4739-bde0-3f26f9e629f9)
+## Lambda Function Details
 
-![Lambda6](https://github.com/Rawipat40/aws_restart-Lambda/assets/141838218/95c1e51f-d74e-4b3d-8bb1-11fc76574cba)
+The `lambda_function.py` file contains a Python function that performs the following steps:
 
-![Lambda7](https://github.com/Rawipat40/aws_restart-Lambda/assets/141838218/9c76ea65-4e8b-4779-a180-d4d01919256d)
-
-![Lambda8](https://github.com/Rawipat40/aws_restart-Lambda/assets/141838218/26520e26-63cb-4f1a-884b-4bebca9e34a2)
-
-![Lambda9](https://github.com/Rawipat40/aws_restart-Lambda/assets/141838218/aab7f806-d8ed-404a-969a-a5e8d1e90ad5)
-
-![Lambda10](https://github.com/Rawipat40/aws_restart-Lambda/assets/141838218/bca23111-b478-48e7-90ac-e2e92bdb64b5)
+1. Retrieves the uploaded file from the S3 bucket.
+2. Reads the contents of the file and counts the occurrences of each word.
+3. Constructs an email message with the word count results.
+4. Sends the email notification using the Simple Email Service (SES).
